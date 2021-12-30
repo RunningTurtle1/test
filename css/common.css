@@ -168,7 +168,7 @@
 *
 */
 .contact-banner{
-    background: url(../images/Contact-banner.jpg);
+    background: url(/images/Contact-banner.jpg);
     display: flex;
     align-items: center;
     height: 372px;
