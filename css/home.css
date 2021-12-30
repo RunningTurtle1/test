@@ -113,7 +113,7 @@
     max-width: 327px;
 }
 #experience-container > .content:nth-child(2) {
-    background-image: url("./images/Vector-logo.png");
+    background-image: url("../images/Vector-logo.png");
 }
 #experience-text {
     max-width: 550px;
@@ -125,7 +125,7 @@
     max-width: 100%;
 }
 #solution-content {
-    background-image: url('./images/section-background.png');
+    background-image: url('../images/section-background.png');
     background-origin: border-box;
     background-repeat: no-repeat;
     max-width: unset;
