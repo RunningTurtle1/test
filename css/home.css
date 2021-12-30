@@ -1,0 +1,349 @@
+/*
+*
+*   HOMEPAGE BANNER
+*
+*/
+.banner {
+    height: 627px;
+    position: relative;
+}
+.banner > div {
+    position: absolute;
+    top: 0px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.banner > .banner-text {
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner > .banner-text > .banner-title,
+.banner > .banner-text > .banner-subtitle,
+.banner > .banner-text > .banner-actions {
+    max-width: 45%;
+    padding: 0 0 0 8%
+}
+.banner > .banner-text .banner-title {
+    color: #09204C;
+    font-size: xxx-large;
+}
+.banner > .banner-text .banner-subtitle {
+    color: #ACB5C6;
+    font-size: x-large;
+}
+.banner > .banner-text .banner-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 24px;
+}
+.banner > .banner-background {
+    z-index: 10;
+    right: 0px;
+    overflow: hidden;
+}
+.banner > .banner-background > img {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+}
+#play-button-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+#play-button-container > div {
+    border: 3px solid var(--button-color);
+    border-radius: 50%;
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#play-button-container > div:hover {
+    background-color: #eaeaea    
+}
+#play-button-container > div > i {
+    color: var(--button-color);
+}
+.video-modal {
+    background-color: #0005;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+.video-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-modal > iframe {
+    border: none;
+    display: none;
+    height: 500px;
+    width: 700px;
+}
+.video-modal.show > iframe {
+    display: inherit;
+}
+@media (max-width: 768px) {
+    .video-modal > iframe {
+        height: 300px;
+        width: 90%;
+    }
+}
+/*
+*
+*   CARDS
+*
+*/
+.card {
+    width: 320px;
+    height: 300px;
+}
+#boost-text {
+    max-width: 327px;
+}
+#experience-container > .content:nth-child(2) {
+    background-image: url("./images/Vector-logo.png");
+}
+#experience-text {
+    max-width: 550px;
+}
+#experience-image {
+    max-width: 569px;
+}
+#experience-image > img {
+    max-width: 100%;
+}
+#solution-content {
+    background-image: url('./images/section-background.png');
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    max-width: unset;
+    display: flex;
+    justify-content: center;
+}
+#solution-content > .content {
+    max-width: 1140px;
+}
+
+/*
+*
+*   COUNTER
+*
+*/
+.counter {
+    display: flex;
+    justify-content: space-between;
+}
+.counter-elt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-elt > .counter-title {
+    font-size: 39px;
+    font-family: MontserratBold;
+}
+.counter-elt > .counter-desc {
+    font-size: 14px;
+    color: #999;
+}
+/*
+*
+*   ETAPES DE RESERVATION
+*
+*/
+.steps {
+    display: flex;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 20%;
+}
+.step .step-number {
+    color: #FFFFFF;
+    font-family: "Source Sans Pro", Sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    padding: 20px;
+    background-color: transparent;
+    background-image: linear-gradient(210deg, var(--button-color) 23%, #4FBCE6 91%);
+    text-align: center;
+    transition: background 2.1s;
+    border-radius: 50%;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.21);
+}
+.step .step-desc { 
+    margin-top: 40px;
+    text-align: center;
+}
+.steps > .step:nth-child(even) {
+    margin-top: 150px;
+}
+/*
+*
+*   POSTS CARDS
+*
+*/
+.posts {
+    display: flex;
+    justify-content: space-between;
+}
+.post-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
+    max-height: 450px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+}
+.post-card .post-image, .post-card .post-image img {
+    max-width: 100%;
+}
+.post-card .title, .post-card .summary {
+    padding: 0 20px;
+}
+.post-card .title {
+    color: #000;
+    font-size: large;
+    font-family: MontserratBold;
+}
+.post-card .summary {
+    font-family: MontserratLight;
+    font-size: small;
+}
+.post-card .link {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0px;
+    padding: 25px 20px;
+    right: 0px;
+    text-align: right;
+    width: 100%;
+    z-index: 10;
+}
+.post-card .link a {
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    #boost-content {
+        flex-direction: column-reverse;
+    }
+    .post-card {
+        max-width: 30%;
+    }
+}
+@media (max-width: 769px) {
+    /*
+    *
+    *   BANNER
+    *
+    */
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        height: unset;
+        justify-content: flex-start;
+        margin-top: 70px;
+    }
+    .banner > div {
+        position: unset;
+    }
+    .banner-text > .banner-title, .banner-text > .banner-subtitle {
+        max-width: 100% !important;
+    }
+    /*
+    *
+    *   BOOST CONTENT
+    *
+    */
+    #boost-content {
+        flex-direction: column-reverse;
+    }
+    #boost-content-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    #boost-content-cards > .content {
+        padding-left: 0;
+    }
+    /*
+    *
+    *
+    *
+    */
+    #experience-container {
+        flex-direction: column;
+    }
+    #experience-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #experience-text .title {
+        text-align: center;
+    }
+    /*
+    *
+    *   COUNTER
+    *
+    */
+    .counter {
+        flex-direction: column;
+    }
+    .counter-elt {
+        margin-bottom: 40px;
+    }
+    /*
+    *
+    *   CARDS
+    *
+    */
+    .cards-container {
+        justify-content: center;
+    }
+    /*
+    *
+    *   STEPS
+    *
+    */
+    .steps {
+        flex-direction: column;
+    }
+    .steps > .step:nth-child(even) {
+        margin-top: 40px;
+    }
+    .step {
+        margin-top: 40px;
+    }
+    /*
+    *
+    *   POSTS
+    *
+    */
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .posts > .post-card {
+        margin-bottom: 40px;
+    }
+}

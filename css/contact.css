@@ -1,0 +1,99 @@
+#main-banner p {
+    font-size: large !important;
+}
+.social-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-button a {
+    background-color: #fff2;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    text-decoration: none;
+    width: 65px;
+    margin: 0 10px;
+}
+.social-button > a:hover {
+    background-color: #fff4;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contact-details > .contact-detail {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-details > .contact-detail > .icon {
+    color: var(--tertiary-color);
+    height: 35px;
+    width: 35px;
+}
+.contact-details > .contact-detail > .label {
+    font-family: MontserratBold;
+    margin-bottom: 15px;
+}
+.contact-details > .contact-detail > .desc {
+    text-align: center;
+}
+.contact-details > .contact-detail > .desc > a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contact-details > .contact-detail {
+        flex: 0 0 90%;
+        margin-bottom: 30px;
+    }
+}
+
+#contact-container .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#contact-container .content .text-content {
+    flex: 0 0 40%;
+}
+#contact-container .content .image-content {
+    flex: 0 0 50%;
+    position: relative;
+}
+#contact-container .content .image-content img {
+    float: right;
+    max-width: 100%;
+}
+#contact-container .content .image-content::after {
+    background-color: var(--tertiary-color);
+    content: "";
+    display: inline-block;
+    height: calc(100% + 50px);
+    width: 300px;
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    z-index: -1;
+}
+@media (max-width: 768px) {
+    #contact-container .content {
+        max-width: 100%;
+    }
+    #contact-container .content .text-content {
+        flex: 0 0 90%;
+        margin-bottom: 30px;
+    }
+    #contact-container .content .image-content {
+        flex: 0 0 90%;
+        position: relative;
+    }
+}
