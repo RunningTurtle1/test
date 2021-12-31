@@ -10,14 +10,16 @@ document.addEventListener('click', (e) => {
     if (e.target.getAttribute('id') === 'presentation-video-modal') {
         e.target.classList.remove('show')
         let iframe = document.querySelector('iframe')
-        iframe.setAttribute('src', '')
+        iframe.remove()
     }
 })
 
 function initYTVideo () {
+    let video_container = document.querySelector('#presentation-video-modal')
     const url = "https://www.youtube.com/embed/IHZtEdbQ10M?feature=oembed&amp;start=1&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=0&amp;mute=0&amp;rel=0&amp;modestbranding=0&amp;autoplay=1"
-    let iframe = document.querySelector('iframe')
-    if (!iframe.getAttribute('src')) iframe.setAttribute('src', url)
+    let iframe = document.createElement('iframe')
+    iframe.setAttribute('src', url)
+    video_container.append(iframe)
 }
 
 window.addEventListener('scroll', function () {
