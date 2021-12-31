@@ -5,7 +5,7 @@ function animateElements () {
     let elts = document.querySelectorAll('[data-animation-class]')
     for (let elt of elts) {
 
-        if (window.scrollY + window.innerHeight > elt.offsetTop) console.log(elt), handleElementAnimation(elt)
+        if (window.scrollY + window.innerHeight > elt.offsetTop) handleElementAnimation(elt)
 
     }
 }
