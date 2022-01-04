@@ -3,6 +3,12 @@
     max-width: 100vw;
     overflow-x: hidden;
 }
+.flex-container > .content {
+    max-width: calc(100% - 40px);
+}
+.flex-container > .content .image,.flex-container > .content .image img {
+    max-width: 100%;
+}
 /*
 *
 *   POSTS
