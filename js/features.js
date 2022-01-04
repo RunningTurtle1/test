@@ -4,9 +4,15 @@ function flipCard () {
     let feature_cards = document.querySelectorAll('.feature-card')
 
     for (let card of feature_cards) {
-        card.addEventListener('click', () => card.classList.toggle('flipped'))
-        card.addEventListener('mouseenter', () => card.classList.add('flipped'))
-        card.addEventListener('mouseleave', () => card.classList.remove('flipped'))
+        card.addEventListener('click', function () {
+            card.classList.toggle('flipped')
+        })
+        if (!"touchstart" in document.documentElement) card.addEventListener('mouseenter', function () {
+            card.classList.add('flipped')
+        })
+        if (!"touchstart" in document.documentElement) card.addEventListener('mouseleave', function () {
+            card.classList.remove('flipped')
+        })
     }
 
 }
