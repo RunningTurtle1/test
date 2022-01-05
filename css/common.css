@@ -84,7 +84,7 @@
     overflow: hidden;
 }
 .card:hover {
-   box-shadow: #ececec 0px 0px 10px;
+   box-shadow: #cacaca 0px 0px 20px;
 }
 .card-body {
     background-color: #fff;
@@ -168,7 +168,9 @@
 *
 */
 .contact-banner{
-    background: url(../images/Contact-banner.jpg);
+    background-image: url(../images/Contact-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     height: 372px;

@@ -188,11 +188,14 @@
     width: 30px;
     padding: 20px;
     background-color: transparent;
-    background-image: linear-gradient(210deg, var(--button-color) 23%, #4FBCE6 91%);
+    background-image: linear-gradient(210deg, #dadada 23%, #4FBCE6 91%);
     text-align: center;
     transition: background 2.1s;
     border-radius: 50%;
     box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.21);
+}
+.step .step-number:hover {
+    background-image: linear-gradient(210deg, var(--button-color) 23%, #4FBCE6 91%);
 }
 .step .step-desc { 
     margin-top: 40px;
