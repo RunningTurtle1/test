@@ -4,7 +4,7 @@ function flipCard () {
     let feature_cards = document.querySelectorAll('.feature-card')
 
     for (let card of feature_cards) {
-        card.addEventListener('click', function () {
+        card.addEventListener('touchend', function () {
             card.classList.toggle('flipped')
         })
         if (!("touchstart" in document.documentElement)) card.addEventListener('mouseenter', function () {
