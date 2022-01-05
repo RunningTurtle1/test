@@ -204,12 +204,30 @@ footer p {
 }
 footer nav ul li {
     list-style-type: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
 }
 footer nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+.footer-social-buttons {
+    display: flex;
+}
+.footer-social-button a {
+    background-color: #fff2;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-decoration: none;
+    width: 30px;
+    margin: 0 10px;
+}
+.footer-social-button > a:hover {
+    background-color: #fff4;
 }
 @media (max-width: 769px) {
         /*
@@ -220,5 +238,8 @@ footer nav ul li a {
     footer {
         padding: 10px;
         flex-direction: column;
+    }
+    footer nav ul {
+        padding-left: 0px;
     }
 }
