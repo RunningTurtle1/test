@@ -6,6 +6,7 @@
 .banner {
     height: 627px;
     position: relative;
+    background-color: #fff;
 }
 .banner > div {
     position: absolute;
@@ -114,6 +115,8 @@
 }
 #experience-container > .content:nth-child(2) {
     background-image: url("../images/Vector-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #experience-text {
     max-width: 550px;

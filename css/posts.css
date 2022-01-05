@@ -3,6 +3,50 @@
     max-width: 100vw;
     overflow-x: hidden;
 }
+/*
+*
+*   BANNER
+*
+*/
+#blog-banner {
+    background-image: url(../images/banniere-blog.jpg);
+    color: #fff;
+    padding-top: 79px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: unset;
+    width: 100vw;
+    padding: 203px 0;
+    margin-top: 0;
+}
+#blog-banner > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    padding: 60px;
+    padding-top: 0;
+}
+#blog-banner > .content > h1 {
+    color: #fff;
+    text-align: center;
+}
+#blog-banner > .content > p {
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#blog-banner > .content > button {
+    margin: 50px 0;
+} @media (max-width: 450px) {
+    #blog-banner {
+        /* background-image: url(../images/Banner_mini.png); */
+    }
+}
 .flex-container > .content {
     max-width: calc(100% - 40px);
 }
