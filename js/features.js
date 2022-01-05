@@ -1,17 +1,20 @@
 window.addEventListener('load', flipCard)
+var is_touch_device = false
+
+window.addEventListener('touchstart', () => is_touch_device = true)
 
 function flipCard () {
     let feature_cards = document.querySelectorAll('.feature-card')
 
     for (let card of feature_cards) {
-        card.addEventListener('touchend', function () {
+        card.addEventListener('click', function () {
             card.classList.toggle('flipped')
         })
-        if (!("touchstart" in document.documentElement)) card.addEventListener('mouseenter', function () {
-            card.classList.add('flipped')
+        card.addEventListener('mouseenter', function () {
+            if (!is_touch_device) card.classList.add('flipped')
         })
-        if (!("touchstart" in document.documentElement)) card.addEventListener('mouseleave', function () {
-            card.classList.remove('flipped')
+        card.addEventListener('mouseleave', function () {
+            if (!is_touch_device) card.classList.remove('flipped')
         })
     }
 
