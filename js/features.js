@@ -7,10 +7,10 @@ function flipCard () {
         card.addEventListener('click', function () {
             card.classList.toggle('flipped')
         })
-        if (!"touchstart" in document.documentElement) card.addEventListener('mouseenter', function () {
+        if (!("touchstart" in document.documentElement)) card.addEventListener('mouseenter', function () {
             card.classList.add('flipped')
         })
-        if (!"touchstart" in document.documentElement) card.addEventListener('mouseleave', function () {
+        if (!("touchstart" in document.documentElement)) card.addEventListener('mouseleave', function () {
             card.classList.remove('flipped')
         })
     }
