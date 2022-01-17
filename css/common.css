@@ -86,6 +86,9 @@
 .card:hover {
    box-shadow: #cacaca 0px 0px 20px;
 }
+.card.no-shadow {
+    box-shadow: none;
+}
 .card-body {
     background-color: #fff;
     padding: 40px;
@@ -102,7 +105,7 @@
     margin-bottom: 15px;
 }
 .card-body > .card-image {
-    box-shadow: #dadada 0 -1px 7px;
+    background-color: #fff;
     border-radius: 50%;
     overflow: hidden;
     padding: 10px;
@@ -122,6 +125,19 @@
     font-family: MontserratLight;
     text-align: center;
 }
+.card.red {
+    background-image: linear-gradient(to bottom right, #F9713D, #DB5A33);
+}
+.card.blue {
+    background-image: linear-gradient(to bottom right, #37649B, #163562);
+}
+.card.red .card-body, .card.blue .card-body {
+    background-color: transparent;
+}
+.card.red .card-title, .card.blue .card-title,
+.card.red .card-desc, .card.blue .card-desc {
+    color: #fff;
+}
 /*
 *
 *   BUTTON
@@ -136,7 +152,7 @@
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: var(--button-color);
+    background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
     border: 0;

@@ -23,10 +23,10 @@ html {
     overflow-x: hidden;
 }
 body {
-    --primary-color: #8AD5E4;
+    --primary-color: #271C49;
     --secondary-color: #2B70B1;
     --tertiary-color: #0C9CE5;
-    --button-color: #2595FF;
+    --button-color: #271C49;
     --title-color: #4B597B;
     font-family: Montserrat, Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fbfbfb;
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     height: 2px;
     width: 30px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     bottom: -5px;
     left: calc(50% - 15px);
 }
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 *
 */
 footer {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     padding: 120px;
     display: flex;
 }

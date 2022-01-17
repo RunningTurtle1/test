@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Simply Agenda</title>
-    <link>https://runningturtle1.github.io/test/features/</link>
+    <link>https://mysimplyagenda.com/features/</link>
     <description>Recent content on My Simply Agenda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     
-	<atom:link href="https://runningturtle1.github.io/test/features/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mysimplyagenda.com/features/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
